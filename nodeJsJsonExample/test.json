@@ -1,0 +1,8 @@
+{
+    "employee":{ "name":"John", "age":30, "city":"New York" },
+    "employee1":{ "name":"Aziz", "age":30, "city":"New York" },
+    "employee2":{ "name":"Furkan", "age":30, "city":"London" },
+    "employee3":{ "name":"DAGLI", "age":30, "city":"Ankara" },
+    "employee4":{ "name":"Ahmet", "age":30, "city":"Istanbul" },
+    "employee5":{ "name":"Bey", "age":30, "city":"Ankara" }
+}
