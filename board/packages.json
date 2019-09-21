@@ -1,0 +1,49 @@
+{
+  "package_array": [
+    {
+      "DAY":22,
+       "VERSION":"V2",
+        "MON":"day",
+        "DATE":11,
+        "HOURS":11,
+        "CMC VERSION":11,
+        "TESTER": 11,
+        "HERT": 11,
+        "PATH": 11,
+        "BUILD":11,
+        "COMMON":11,
+        "PRODUCT":11,
+        "DESC":11
+    },
+    {
+      "DAY":22,
+       "VERSION":"V2",
+        "MON":"day",
+        "DATE":11,
+        "HOURS":11,
+        "CMC VERSION":11,
+        "TESTER": 11,
+        "HERT": 11,
+        "PATH": 11,
+        "BUILD":11,
+        "COMMON":11,
+        "PRODUCT":11,
+        "DESC":11
+    },
+    {
+      "DAY":22,
+       "VERSION":"V2",
+        "MON":"day",
+        "DATE":11,
+        "HOURS":11,
+        "CMC VERSION":11,
+        "TESTER": 11,
+        "HERT": 11,
+        "PATH": 11,
+        "BUILD":11,
+        "COMMON":11,
+        "PRODUCT":11,
+        "DESC":11
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Calendar - Bootsnipp.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <OBJECT id="data1" data="./writes.xml" width="1px" height="1px"></OBJECT>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .row-striped:nth-of-type(odd) {
+            background-color: #efefef;
+            border-left: 4px #000000 solid;
+        }
+
+        .row-striped:nth-of-type(even) {
+            background-color: #ffffff;
+            border-left: 4px #efefef solid;
+        }
+
+        .row-striped {
+            padding: 15px 0;
+        }
+    </style>
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                // document is ready. Do your stuff here
+                render_fun(1)
+                render_fun(2)
+                render_fun(3)
+
+            }
+        }
+        function render_fun(day) {
+            console.log("ready!");
+            var theDiv = document.getElementById("main_container");
+            var content = '<div class="row row-striped"><div class="col-2 text-right"><h1 class="display-4"><span class="badge badge-secondary">{DAY}</span></h1><h2>{MON}</h2></div><div class="col-10"><h3 class="text-uppercase"><strong>{VERSION}</strong></h3><ul class="list-inline"><li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>{DATE}</li><li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>{HOURS}</li></ul><ul class="list"><li class="list-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>{CMC VERSION}</li><li class="list-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>{TESTER}</li><li class="list-item"><i class="fa fa-clock-o" aria-hidden="true"></i>{HERT}</li><li class="list-item"><i class="fa fa-clock-o" aria-hidden="true"></i>{PATH}</li></ul><ul class="list-inline"><li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>{BUILD}</li><li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>{COMMON}</li><li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>{PRODUCT}</li></ul><p>{DESC}</p></div></div>';
+            content = content.replace('{DAY}', day);
+            content = content.replace('{VERSION}', day);
+            content = content.replace('{MON}', day);
+            content = content.replace('{DATE}', 11);
+            content = content.replace('{HOURS}', 11);
+            content = content.replace('{CMC VERSION}', 11);
+            content = content.replace('{TESTER}', 11);
+            content = content.replace('{HERT}', 11);
+            content = content.replace('{PATH}', 11);
+            content = content.replace('{BUILD}', 11);
+            content = content.replace('{COMMON}', 11);
+            content = content.replace('{PRODUCT}', 11);
+            content = content.replace('{DESC}', 11);
+
+            theDiv.innerHTML = content + theDiv.innerHTML
+
+        }
+
+
+
+    </script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <div class="container" id="main_container">
+
+    </div>
+
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>
