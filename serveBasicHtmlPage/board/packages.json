@@ -1,0 +1,49 @@
+{
+  "package_array": [
+    {
+      "DAY": 22,
+      "VERSION": "V2",
+      "MON": "Friday",
+      "DATE": "11.05.2019",
+      "HOURS": "11:00",
+      "CMC_VERSION": "b100",
+      "TESTER": "anonim",
+      "HERT": "public",
+      "PATH": "public/path",
+      "BUILD": "dev",
+      "COMMON": "dev",
+      "PRODUCT": "dev",
+      "DESC": "daily package"
+    },
+    {
+      "DAY": 22,
+      "VERSION": "V3",
+      "MON": "Friday",
+      "DATE": "11.05.2019",
+      "HOURS": "11:00",
+      "CMC_VERSION": "b101",
+      "TESTER": "anonim",
+      "HERT": "public",
+      "PATH": "public/path",
+      "BUILD": "dev",
+      "COMMON": "dev",
+      "PRODUCT": "dev",
+      "DESC": "daily package"
+    },
+    {
+      "DAY": 22,
+      "VERSION": "V5",
+      "MON": "Friday",
+      "DATE": "11.05.2019",
+      "HOURS": "12:00",
+      "CMC_VERSION": "b104",
+      "TESTER": "anonim",
+      "HERT": "public",
+      "PATH": "public/path",
+      "BUILD": "dev",
+      "COMMON": "dev",
+      "PRODUCT": "dev",
+      "DESC": "daily package"
+    }
+  ]
+}
