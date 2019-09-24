@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap basic table example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script>
+        var json_tmp;
+        var ajax_call = function () {
+            //your jQuery ajax code
+            $.ajax({
+                url: 'env.json',
+                dataType: 'json',
+                type: 'get',
+                cache: 'false',
+                success: function (data) {
+                    if (JSON.stringify(data) != JSON.stringify(json_tmp)) {
+                        $('#my_table_body').empty()
+                        $(data.environments).each(function (index, value) {
+                            console.log(value)
+                            render_fun(value)
+                        });
+                        json_tmp = data
+                    }
+                    else {
+                        console.log('Status: Same')
+                    }
+
+                }
+            });
+        };
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                setInterval(ajax_call, 500);
+            }
+        }
+
+        function render_fun(value) {
+            var theDiv = document.getElementById("monitor_table");
+            var content = '<tr class="{STATUS}"><td>{IP}</td><td>{OS}</td><td>{Location}</td><td>{STATUS}</td></tr>';
+            content = content.replace('{STATUS}', value.STATUS);
+            content = content.replace('{STATUS}', value.STATUS);
+            content = content.replace('{OS}', value.OS);
+            content = content.replace('{IP}', value.IP);
+            content = content.replace('{Location}', value.LOCATION);
+            $('#my_table_body').append(content);
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container" id="main_container">
+        <table class="table table-bordered table-striped table-hover" id="monitor_table">
+            <thead>
+                <tr>
+                    <th>IP</th>
+                    <th>OS</th>
+                    <th>LOCATION</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+
+            <tbody id="my_table_body">
+
+            </tbody>
+
+        </table>
+    </div>
+
+</body>
+
+</html>
